@@ -1,0 +1,134 @@
+{
+  "table": "BPARTNER",
+  "abbreviation": "BPR",
+  "label": "Business Partner",
+  "version_diff": "V11 (P22) / V2023R1",
+  "keys": [
+    {
+      "modification": "Nouvelle clé",
+      "key": "BPR3",
+      "description": "BPSFLG+CRN+EECNUM",
+      "duplicates": true,
+      "activity_code": "EINV"
+    }
+  ],
+  "columns": [
+    {
+      "modification": "Champ modifié",
+      "column": "BPPFLG",
+      "dimension": "(0..0)",
+      "label": "Secteur public",
+      "type": "M1",
+      "length": 4,
+      "options": null,
+      "linked_table": null,
+      "link_expression": null,
+      "deletion_rule": "Non",
+      "activity_code": "MAXPD"
+    },
+    {
+      "modification": "Nouveau champ",
+      "column": "EINVTYP",
+      "dimension": "(0..0)",
+      "label": "Type facture électronique",
+      "type": "M2127",
+      "length": 15,
+      "options": null,
+      "linked_table": null,
+      "link_expression": null,
+      "deletion_rule": "Non",
+      "activity_code": "EINV"
+    },
+    {
+      "modification": "Nouveau champ",
+      "column": "EORINUM",
+      "dimension": "(0..0)",
+      "label": "Numéro EORI",
+      "type": "A",
+      "length": 35,
+      "options": null,
+      "linked_table": null,
+      "link_expression": null,
+      "deletion_rule": "Non",
+      "activity_code": "EORI"
+    },
+    {
+      "modification": "Champ modifié",
+      "column": "GRUGPY",
+      "dimension": "(0..0)",
+      "label": "Périmètre de conso",
+      "type": "A",
+      "length": 5,
+      "options": null,
+      "linked_table": "AGRPFCY",
+      "link_expression": null,
+      "deletion_rule": "Non",
+      "activity_code": "CSL"
+    },
+    {
+      "modification": "Nouveau champ",
+      "column": "INTSRVCOD",
+      "dimension": "(0..0)",
+      "label": "Code du service",
+      "type": "A",
+      "length": 100,
+      "options": null,
+      "linked_table": null,
+      "link_expression": null,
+      "deletion_rule": "Non",
+      "activity_code": "EINV"
+    },
+    {
+      "modification": "Nouveau champ",
+      "column": "MAPCOD",
+      "dimension": "(0..0)",
+      "label": "Code mapping facture élect.",
+      "type": "MAPNAM",
+      "length": null,
+      "options": null,
+      "linked_table": "EINVMAP",
+      "link_expression": null,
+      "deletion_rule": "Non",
+      "activity_code": "EINV"
+    },
+    {
+      "modification": "Nouveau champ",
+      "column": "REGNUM",
+      "dimension": "(0..0)",
+      "label": "Numéro immatriculation",
+      "type": "A",
+      "length": 14,
+      "options": null,
+      "linked_table": null,
+      "link_expression": null,
+      "deletion_rule": "Non",
+      "activity_code": "KZA"
+    },
+    {
+      "modification": "Nouveau champ",
+      "column": "RTGCOD",
+      "dimension": "(0..0)",
+      "label": "Code routage",
+      "type": "A",
+      "length": 100,
+      "options": null,
+      "linked_table": null,
+      "link_expression": null,
+      "deletion_rule": "Non",
+      "activity_code": "EINV"
+    },
+    {
+      "modification": "Nouveau champ",
+      "column": "VATNO",
+      "dimension": "(0..0)",
+      "label": "Numéro TVA",
+      "type": "A",
+      "length": 10,
+      "options": null,
+      "linked_table": null,
+      "link_expression": null,
+      "deletion_rule": "Non",
+      "activity_code": "KZA"
+    }
+  ]
+}
